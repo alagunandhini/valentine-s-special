@@ -40,27 +40,27 @@ left1.addEventListener("dragover",function(e){
 
     });
 
-function createHeart() {
-    const heart = document.createElement("div");
-    heart.classList.add("heart");
-    heart.innerHTML = "🩷";
-    document.body.appendChild(heart);
+// function createHeart() {
+//     const heart = document.createElement("div");
+//     heart.classList.add("heart");
+//     heart.innerHTML = "🩷";
+//     document.body.appendChild(heart);
 
-    // Random horizontal position
-    heart.style.left = Math.random() * window.innerWidth + "px";
+//     // Random horizontal position
+//     heart.style.left = Math.random() * window.innerWidth + "px";
 
-    // Random size
-    const size = Math.random() * 20 + 10 + "px";
-    heart.style.fontSize = size;
+//     // Random size
+//     const size = Math.random() * 20 + 10 + "px";
+//     heart.style.fontSize = size;
 
-    // Random animation duration
-    heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+//     // Random animation duration
+//     heart.style.animationDuration = Math.random() * 3 + 2 + "s";
 
-    // Remove heart after animation
-    setTimeout(() => {
-        heart.remove();
-    }, 4000);
-}
+//     // Remove heart after animation
+//     setTimeout(() => {
+//         heart.remove();
+//     }, 4000);
+// }
 
-// Generate hearts every 500ms
-setInterval(createHeart, 500);
+// // Generate hearts every 500ms
+// setInterval(createHeart, 500);
