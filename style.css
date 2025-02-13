@@ -35,6 +35,18 @@ body{
 .list:hover{
     transform: scale(1.05);
 }
+.list1{
+    margin: 22px;
+    width: 160px;
+
+    height: 160px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     /* flex-basis: 200px; */
+     transition: transform 0.2s ease-in-out;
+}
  #right,#left{
     display: flex;
     justify-content:center;
@@ -47,7 +59,7 @@ body{
     padding: 10px;
     background-color: white;
     border: 2px dashed palevioletred; 
-     margin: 10px;
+     margin: 30px;
      border-radius: 20px;
      transition: 0.3s;
    
@@ -61,10 +73,13 @@ h1{
     text-align: center;
 
 }
-.list img{
+.list1 img{
+    
+
     height: 30px;
     cursor: grab;
     transition: transform 0.2s;
+    
     /* filter: drop-shadow(10px 10px 20px rgb(255,255,244)); */
 
  
@@ -74,6 +89,33 @@ h1{
 .list img:active{
 transform: scale(1.2);
 }
+#refresh{
+    /* background-color: pink;
+    color: rgb(97, 3, 34);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    height: 60px;
+    width: 80px; */
+    background: linear-gradient(45deg, palevioletred,pink);
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
+
+}
+#refresh:hover{
+    /* transform: scale(1.1); */
+    background: linear-gradient(45deg, pink,palevioletred);
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
+}
+    
 /* .heart {
     position: absolute;
     color: red;
